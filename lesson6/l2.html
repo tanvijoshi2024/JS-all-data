@@ -6,12 +6,80 @@
     <body>
         <p>Rock Paper Sissors</p>
         <button onclick="
-         const randomNumber=Math.randon();
+         const randomNumber= Math.randon();
+         let computerMove ='';
 
-         if(randomNumber >=0 && randomNumber <1){}
+         if(randomNumber >=0 && randomNumber <1/3){
+             computerMove ='Rock';
+         }else if(randomNumber >=1/3 && randomNumber <2/3){
+             computerMove ='Paper';
+         }else (randomNumber >=2/3 && randomNumber <1)
+         {
+             computerMove ='Sissors';
+         }
+
+
+         let result = ' ';
+
+         if(computerMove === 'Rock'){
+            result='Tie';
+        }else if(computerMove === 'Paper'){
+            result='You Loose';
+        } else if(computerMove === 'Sissors'){
+            result='You Win';
+        }
+        alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
         ">Rock</button>
-        <button>Paper</button>
-        <button>Sissors</button>
+       <button onclick="
+         const randomNumber= Math.randon();
+         let computerMove ='';
+
+         if(randomNumber >=0 && randomNumber <1/3){
+             computerMove ='Rock';
+         }else if(randomNumber >=1/3 && randomNumber <2/3){
+             computerMove ='Paper';
+         }else (randomNumber >=2/3 && randomNumber <1)
+         {
+             computerMove ='Sissors';
+         }
+
+
+         let result = ' ';
+
+         if(computerMove === 'Rock'){
+            result='You win';
+        }else if(computerMove === 'Paper'){
+            result='Tie';
+        } else if(computerMove === 'Sissors'){
+            result='You Loose';
+        }
+        alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
+       ">Paper</button>
+        <button onclick="
+          const randomNumber= Math.randon();
+         let computerMove ='';
+
+         if(randomNumber >=0 && randomNumber <1/3){
+             computerMove ='Rock';
+         }else if(randomNumber >=1/3 && randomNumber <2/3){
+             computerMove ='Paper';
+         }else (randomNumber >=2/3 && randomNumber <1)
+         {
+             computerMove ='Sissors';
+         }
+
+
+         let result = ' ';
+
+         if(computerMove === 'Rock'){
+            result='You loose';
+        }else if(computerMove === 'Paper'){
+            result='You Win';
+        } else if(computerMove === 'Sissors'){
+            result='Tie';
+        }
+        alert(`You picked Sissors. Computer picked ${computerMove}. ${result}`);
+        ">Sissors</button>
         <script></script>
     </body>
 </html>
